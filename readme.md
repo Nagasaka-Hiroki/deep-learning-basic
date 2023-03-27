@@ -35,7 +35,7 @@ docker compose up -d --build
 
 例えば、画像は以下。
 
-[deep-learning-from-scratch/lena.png at master · oreilly-japan/deep-learning-from-scratch · GitHub](https://github.com/oreilly-japan/deep-learning-from-scratch/blob/master/dataset/lena.png)
+- [deep-learning-from-scratch/lena.png at master · oreilly-japan/deep-learning-from-scratch · GitHub](https://github.com/oreilly-japan/deep-learning-from-scratch/blob/master/dataset/lena.png)
 
 画像をダウンロードはホストのコマンドを使うとコンテナに新しく追加しなくて良くなる。ホストで`curl`が使えるようにして以下を実行する。
 

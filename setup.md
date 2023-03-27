@@ -62,7 +62,7 @@ anacondaについて。
 - [Anaconda Documentation — Anaconda documentation](https://docs.anaconda.com/)
 - [Installing on Linux — Anaconda documentation](https://docs.anaconda.com/anaconda/install/linux/)
 
-調べているとanacndaはライセンスが少し面倒かもしれない。個人利用であっても組織に所属していれば費用がかかるかもしれない。利用の停止方法は使わなければいいということらしいが。
+調べているとanacndaはライセンスが少し面倒かもしれない。個人利用であっても組織に所属していれば費用がかかるかもしれない。今は所属していないので問題ないが、今後のことを考えると慎重になったほうが良さそうだと思う。利用の停止方法は使わなければいいということらしいが。
 
 過去にanacondaを使ったことはあるが、機能をほとんど使い切っていない気がした。そのため必要なものを個別にインストールしたほうがいいだろう。特に今はOSがLinuxなのでインストールもそこまで難しいわけではないと思うのでなおさらである。
 
@@ -101,6 +101,8 @@ Python 3.11.2
 - [Docker上のX11GUIをWindowsで使う](https://zenn.dev/dozo/articles/3ef1565b2b069e)
 
 上記をもとに、docker-compose.ymlを編集する。
+
+以下コードで動作確認をする。
 
 ```python
 import numpy as np
