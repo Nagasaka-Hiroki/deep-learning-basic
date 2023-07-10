@@ -28,19 +28,3 @@ docker compose up -d --build
 - [numpy · PyPI](https://pypi.org/project/numpy/)
 - [matplotlib · PyPI](https://pypi.org/project/matplotlib/)
 
-## 素材について
-　本の途中で画像などを使うケースがある。そのデータはGitHubリポジトリに準備されている。
-
-- [GitHub - oreilly-japan/deep-learning-from-scratch: 『ゼロから作る Deep Learning』(O'Reilly Japan, 2016)](https://github.com/oreilly-japan/deep-learning-from-scratch)
-
-例えば、画像は以下。
-
-- [deep-learning-from-scratch/lena.png at master · oreilly-japan/deep-learning-from-scratch · GitHub](https://github.com/oreilly-japan/deep-learning-from-scratch/blob/master/dataset/lena.png)
-
-画像をダウンロードはホストのコマンドを使うとコンテナに新しく追加しなくて良くなる。ホストで`curl`が使えるようにして以下を実行する。
-
-```bash
-curl https://raw.githubusercontent.com/oreilly-japan/deep-learning-from-scratch/master/dataset/lena.png -o lena.png
-```
-
-URLは、GitHubのダウンロードのボタンを押すと表示される。そこからコピーしてきた。この要領で他の画像についても同様に操作する。
