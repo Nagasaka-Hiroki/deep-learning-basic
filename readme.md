@@ -1,4 +1,4 @@
-# ゼロから作るDeep Learning
+# ゼロから作るDeep Learningを読む
 　読みながら作業をしていく。GitHubのリポジトリもあるそうだ。以下に示す。
 
 - [GitHub - oreilly-japan/deep-learning-from-scratch: 『ゼロから作る Deep Learning』(O'Reilly Japan, 2016)](https://github.com/oreilly-japan/deep-learning-from-scratch)
