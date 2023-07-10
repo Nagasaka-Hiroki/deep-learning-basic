@@ -12,7 +12,8 @@ services:
         - WORK_DIR=${WORK_DIR}
         - USER_ID=${USER_ID}
         - GROUP_ID=${GROUP_ID}
-    user: "user01"
+        - LIB_PATH=${LIB_PATH}
+    user: ${USER_NAME}
     volumes:
       - type: bind
         source: ./
@@ -23,3 +24,4 @@ services:
     working_dir: ${WORK_DIR}
     environment:
       - DISPLAY=${DISPLAY}
+      - LIB_PATH=${LIB_PATH}
