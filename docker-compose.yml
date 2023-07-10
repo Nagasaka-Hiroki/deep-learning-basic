@@ -25,3 +25,4 @@ services:
     environment:
       - DISPLAY=${DISPLAY}
       - LIB_PATH=${LIB_PATH}
+      - NO_AT_BRIDGE=${NO_AT_BRIDGE}

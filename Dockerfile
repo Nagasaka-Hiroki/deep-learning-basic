@@ -16,9 +16,13 @@ ARG LIB_PATH
 RUN groupadd -g ${GROUP_ID} ${GROUP_NAME} \
  && useradd -m -s /bin/bash -u ${USER_ID} -g ${GROUP_ID} ${USER_NAME}
 
-#GUI環境を有効にするためのツールと追加でツールをインストールする。
+#GUI環境を有効にするためのツールをインストールする。
 RUN apt-get update && apt-get upgrade -y \
- && apt-get install python3-tk tk-dev git -y
+ && apt-get install python3-tk tk-dev -y
+
+#追加でツールをインストールする。
+RUN apt-get update && apt-get upgrade -y \
+ && apt-get install -y git eog libcanberra-gtk* dbus-x11
 
 #ユーザを切り替える。
 USER ${USER_NAME}

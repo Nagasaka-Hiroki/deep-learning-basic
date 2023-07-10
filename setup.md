@@ -151,3 +151,18 @@ RUN apt-get update && apt-get upgrade -y \
 
 ### Dockerの設定完了
 　とりあえず上記までで開発環境のセットアップは完了とする。必要に応じて追記する。
+
+### 追加設定
+　画像を表示するところでエラーが出た。以下のサイトを参考に設定を追加した。
+
+- [Dockerコンテナ内でgnome-terminalの実行を試みるもエラー（Failed to execute child process “dbus-launch” (No such file or directory)） - Qiita](https://qiita.com/seigot/items/be32c39a0c3afd23597e)
+- [SSHでリモートログインした時に、接続元のXサーバーを使うように設定する - Qiita](https://qiita.com/charon/items/28fe7b12544b5e5b0cb7)
+- [OpenCVを実行するとでてくるFailed to load module "canberra-gtk-module"というエラーの対処法 - Qiita](https://qiita.com/igor-bond16/items/d5641e39ad93ad57826e)
+
+
+操作としては以下である。
+
+1. apt-get install -y eog libcanberra-gtk* dbus-x11 を追加する。
+1. 環境変数に`NO_AT_BRIDGE=1`を追加する。
+
+これでエラーがなくなったので、この設定でファイルを構成した。
